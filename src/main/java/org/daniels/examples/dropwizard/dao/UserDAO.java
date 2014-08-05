@@ -25,4 +25,8 @@ public class UserDAO extends AbstractDAO<User> {
     public List<User> findAll() {
         return list(namedQuery("org.daniels.examples.dropwizard.core.User.findAll"));
     }
+    
+    public List<User> findTop10() {
+        return list(namedQuery("org.daniels.examples.dropwizard.core.User.findtop10"));
+    }
 }

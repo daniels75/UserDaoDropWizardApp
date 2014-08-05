@@ -9,16 +9,16 @@ database:
 database:
 
   # the name of your JDBC driver
-  driverClass: com.mysql.jdbc.Driver
+  driverClass: org.h2.Driver
 
   # the username
-  user: root
+  user: sa
 
   # the password
-  password: wodna33
+  password: sa
 
   # the JDBC URL
-  url: jdbc:mysql://localhost/dropwizard2?createDatabaseIfNotExist=true
+  url: jdbc:h2:~/target/example1
 
 # use the simple server factory if you only want to run on a single port
 #server:

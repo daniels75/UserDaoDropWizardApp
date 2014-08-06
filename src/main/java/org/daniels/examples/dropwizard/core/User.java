@@ -29,7 +29,7 @@ import javax.persistence.Table;
 @NamedNativeQueries({
 	@NamedNativeQuery(
 			name = "org.daniels.examples.dropwizard.core.User.findtop10",
-			query = "SELECT  * FROM User u limit 2", resultClass = User.class)
+			query = "SELECT  u.* FROM User u order by u.id desc limit 10", resultClass = User.class)
 })
 
 public class User {
